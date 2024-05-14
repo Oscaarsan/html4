@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo Simple</title>
+</head>
+<body background="https://static.vecteezy.com/system/resources/previews/001/930/915/non_2x/light-orange-blur-background-vector.jpg">
+<center>
+<a href="pagina3.html" TARGET="Main"<h1>Menú</h1></a>
+</center>
+<ul>
+<li><h3><span onclick="mostrarOcultarContenido(1)">Baloncesto</span></h3></li>
+<div id="contenido1" style="display:none;">
+  <ul>
+  <a href="miexperiencia.html" TARGET="Main"<li>Mi experiencia</li></a><br>
+  <a href="nba.html" TARGET="Main"<li>NBA</li></a><br>
+  <a href="jugadafavorita.html" TARGET="Main"<li>Jugada Favorita</li></a>
+  </ul>
+</div>
+<li><h3><span onclick="mostrarOcultarContenido(2)">Videojuegos</span></h3></li>
+<div id="contenido2" style="display:none;">
+  <ul>
+  <a href="favorito.html" TARGET="Main"<li>Favorito</li></a><br>
+  <a href="tierlist.html" TARGET="Main"<li>Tierlist</li></a><br>
+  <a href="consolas.html" TARGET="Main"<li>Consolas</li></a>
+  </ul>
+</div>
+<li><h3><span onclick="mostrarOcultarContenido(3)">Comida</span></h3></li>
+<div id="contenido3" style="display:none;">
+  <ul>
+  <a href="1.html" TARGET="Main"<li>Favorita salada</li></a><br>
+  <a href="2.html" TARGET="Main"<li>Favorita dulce</li></a><br>
+  <a href="3.html" TARGET="Main"<li>Peor</li></a><br>
+  <a href="4.html" TARGET="Main"<li>Mejor gastronomía</li></a>
+  </ul>
+</div>
+<li><h3><span onclick="mostrarOcultarContenido(4)">Series Y Películas</span></h3></li>
+<div id="contenido4" style="display:none;">
+  <ul>
+  <a href="ms.html" TARGET="Main"<li>3 Mejores series</li></a><br>
+  <a href="3mp.html" TARGET="Main"<li>3 Mejores películas</li></a><br>
+  <a href="ps.html" TARGET="Main"<li>3 peores series</li></a><br>
+  <a href="pp.html" TARGET="Main"<li>3 peores películas</li></a>
+  </ul>
+</div>
+</ul>
+
+<script>
+    function mostrarOcultarContenido(numero) {
+        var contenido = document.getElementById("contenido" + numero);
+        if (contenido.style.display === "none") {
+            
+            contenido.style.display = "block";
+        } else {
+            
+            contenido.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>
